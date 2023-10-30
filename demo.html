@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<link rel="stylesheet" type="text/css" href="demo.css">
+<title>HTML TO PDF</title>
+<head>               
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" >
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.7.0/jspdf.plugin.autotable.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="demo.js"></script>
+</head>
+<body>
+        <table  id="table">
+            <thead>
+            <tr>
+                
+                <th>Name</th>
+                <th>Mob. No.</th>
+                <th>Email Id</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td>Ezhil</td>
+                <td>8098098901</td>
+                <td>ezhil@gmail.com</td>
+                <td><img  src="images/yes.png" alt="loading" /></td>
+            </tr>
+            <tr>
+                
+                <td>sibi</td>
+                <td>8098098901</td>
+                <td>sibi@gmail.com</td>
+                <td><img src="images/yes.png" alt="loading" /></td>
+            </tr>
+            <tr>
+                
+                <td>sibi</td>
+                <td>8098098901</td>
+                <td>sibi@gmail.com</td>
+                <td><img src="images/no.png" alt="loading" /></td>
+            </tr>
+            <tr>
+                <td>puni</td>
+                <td>8098098901</td>
+                <td>puni@gmail.com</td>
+                <td><img  src="images/no.png" alt="loading" /></td>
+            </tr>
+            <tr>
+                <td>Ezhil</td>
+                <td>8098098901</td>
+                <td>ezhil@gmail.com</td>
+                <td><img src="images/yes.png" alt="loading" /></td>
+            </tr>
+        </tbody>
+        </table>
+        <br/>
+        <br/>
+        <button type="button" onclick="exportPdf()" class="btn btn-primary">Export To PDF</button>
+    </body>
+    
+</html>
